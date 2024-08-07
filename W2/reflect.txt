@@ -1,0 +1,32 @@
+/*/////////////////////////////////////////////////////////////////////////
+                        OOP244_ZFF LAB02
+Full Name  :Aung Moe Thwe
+Student ID#:148396237
+Email      :amthwe@myseneca.ca
+Section    :ZFF
+Date       :5/27/2024
+
+Declaration:
+I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+/////////////////////////////////////////////////////////////////////////*/
+
+
+Doing this workshop, I've gained a better understanding of the differences and applications of static and dynamic memory more clearly. At the bare minimum, dynamic is allocated during program runtime, whereas static memory is fixed by the compiler and linker.
+Furthermore, I've also applied what I've learnt from the first workshop and study notes on the importance of the foundations and structuring of the code into proper modules with proper names to ensure clarity and efficiency.
+Most importantly, in this workshop, I utilized memory allocations and deallocations to allow flexible memory utilization, but also to prevent leaks. For example, the load function where we allocated a dynamic memory for the employee name using "new:
+
+if (read(employee.m_empNo) && read(employee.m_salary) && read(name)) {
+    employee.m_name = new char[strlen(name) + 1];
+    strcpy(employee.m_name, name);
+    ok = true;
+}
+
+and the cleanup using the deallocateMemory() function:
+
+if (load()) {
+    display();
+}
+deallocateMemory();
+
+I found some parts difficult, especially the reading datafiles, but I read back some notes from IPC and tried them again. Apart from that, most of the workshop was fairly challenging but not that hard.
+

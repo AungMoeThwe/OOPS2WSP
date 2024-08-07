@@ -1,0 +1,32 @@
+/*/////////////////////////////////////////////////////////////////////////
+                        OOP244_ZFF LAB05
+Full Name  :Aung Moe Thwe
+Student ID#:148396237
+Email      :amthwe@myseneca.ca
+Section    :ZFF
+Date       :6/18/2024
+
+Declaration:
+I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+/////////////////////////////////////////////////////////////////////////*/
+
+This workshop explored the topics of operands and overloading them to perform various operations. We learned about 3 types of operators based on the number of operands they take (Unary, Binary and Tenary) and 2 ways of overloading them (Member operators and Helper operators). Unary operators are those with one and binary with two and three respectively. 
+
+Unary operators are used for pre/post fix operands. In the workshop an example of this is:
+bool operator~() const; 
+This was constructed to check if the account has a number.
+
+
+Binary for assignments, arithmetic and logical operands. Examples in the workshop are:
+Account& operator>>(Account& transferRight); // left to right transfer
+Account& operator+=(const double deposit); // deposit if valid
+Account& operator-=(const double withdraw); // withdraw if valid
+
+
+Tenary for conditional operands. 
+
+The only difference between Member and Helper function is that the former has direct access and is part of the class, whereas the latter don't have direct access.
+
+The ones stated above are member operands. An example of helper functions are:
+friend double operator+(const Account& left, const Account& right); // total of two accounts
+friend double operator+=(double& value, const Account& add); // add balance to double value

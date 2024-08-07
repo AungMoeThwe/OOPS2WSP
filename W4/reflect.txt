@@ -1,0 +1,14 @@
+/*/////////////////////////////////////////////////////////////////////////
+                        OOP244_ZFF LAB04
+Full Name  :Aung Moe Thwe
+Student ID#:148396237
+Email      :amthwe@myseneca.ca
+Section    :ZFF
+Date       :6/11/2024
+
+Declaration:
+I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+/////////////////////////////////////////////////////////////////////////*/
+
+This workshop, for me, gave me a better perspective of "object oriented programming" in a more clear manner.
+I've utilized encapsulation in a very broad manner, and see how the "canister" behaves as an object, defined by the user, having methods (like pouring, displaying, clearing, ...) and attributes (like content, diameter, height and so on...). Furthermore, from the programming side of view, I've learnt the implementations of constructors, destructors and various type of methods, down to the details. I've also witnessed the importance of function overloading and it's role in polymorphism of object oriented programming. This is obvious when i wrote the function definitions for the canister constructors and helper functions. It's tiring and tedious whilst coding them initially, but I came to a realization that they can be reused in so many more helpful ways and can be applied in several various scenarios. Furthermore, after learning about inheritance in class, it gave me ideas to approach and improvise this code in various new ways, all the while giving me a better overview of this particular way of programming.

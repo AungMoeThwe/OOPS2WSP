@@ -1,0 +1,13 @@
+/*/////////////////////////////////////////////////////////////////////////
+                        OOP244_ZFF LAB07
+Full Name  :Aung Moe Thwe
+Student ID#:148396237
+Email      :amthwe@myseneca.ca
+Section    :ZFF
+Date       :7/16/2024
+
+Declaration:
+I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+/////////////////////////////////////////////////////////////////////////*/
+
+In this workshop, I developed a basic delivery system using C++ to explore hierarchical structures in inheritance. For example, creating a Truck class that is based off of MotorVehicle class and inherits the attributes of the MotorVehicle class. Furthermore, this project also explored the understanding of implementing custom input/output operators for these classes. It showed me how attributes and methods can be reused and extended in derived classes. We also learnt the overriding of methods to access shadowed functions in the base class. It also gave me an idea of where "Templates" in C++ can be useful as there are constant repetitive code that does the exact same thing, just with different data types. I had some trouble overloading operators and understanding the workshop in general but it became clear, the more I read it. It was similar to to Workshop 6, but with the added difficulty of inheritance concepts and hierarchical structures. I also had to manage my memory, handling leaks while juggling dynamic allocations and deallocations.

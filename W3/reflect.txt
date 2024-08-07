@@ -1,0 +1,13 @@
+/*/////////////////////////////////////////////////////////////////////////
+                        OOP244_ZFF LAB03
+Full Name  :Aung Moe Thwe
+Student ID#:148396237
+Email      :amthwe@myseneca.ca
+Section    :ZFF
+Date       :6/3/2024
+
+Declaration:
+I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+/////////////////////////////////////////////////////////////////////////*/
+
+This workshop gave me better insights to understanding member functions like designing member functions using logical constructs, controlling accessibility to data members of classes and initializing empty states of objects. Especially utilizing the concept of encapsulation, in the private members of Bill and Item classes. For example, using public member functions that have access to the private members to modify them. Furthermore, I've come to realize the importance of re-initializing data/inputs. Unlike many languages like python or javaScript, where they are loosely typed, allocating and playing around with memory in C/C++ compiler languages can be quite challenging and at the same time, can make a better and efficient program, but with the cost of it being more complex. I've experienced this firsthand whilst doing this workshop, especially during the final testing stage where for larger test cases, not allocating memory or re initializing it can cause problems. Furthermore, I figured out how the robust and broad C++ is and how useful it is especially when utilizing the cout object methods to justify and format content. We aren't just displaying something just as we did in C, but we are changing our perspectives to be more object oriented where it has many methods and attributes, where even a simple object like cout can be used in many different ways instead of just something like printf in C.

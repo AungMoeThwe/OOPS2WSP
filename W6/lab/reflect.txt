@@ -1,0 +1,13 @@
+/*/////////////////////////////////////////////////////////////////////////
+                        OOP244_ZFF LAB06
+Full Name  :Aung Moe Thwe
+Student ID#:148396237
+Email      :amthwe@myseneca.ca
+Section    :ZFF
+Date       :7/9/2024
+
+Declaration:
+I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+/////////////////////////////////////////////////////////////////////////*/
+
+I have learnt how to prevent copy constructors and copy assignments in this workshop and utilized friend functions that link the classes so that they can utilize attributes and methods from each other. Furthermore, this workshop taught me in detail, how to manually code constructors and destructors and implement them. I have had problems organizing the code in general and try to grasp the amount of codes inside the solution, but at the same time, I have learnt how to initialize memory to make sure that memory problems and leaks don't occur as much. Overloading operators was also a bit of challenge but I got used to it as time went by and as I wrote more lines and started to see a pattern to easily implement them. Handling, and loading up external files was also a bit of a challenge I got into apart from actually managing the memory. All in all, using the string library in C++ was much easier than manually coding strings and I got to learn more about the ifstream and ofstream of the iostream library.
