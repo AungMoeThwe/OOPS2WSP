@@ -12,15 +12,24 @@ bool checkSocialID(const std::string& sid, Person* persons[], int size)
 	return true;
 }
 
+bool checkAccountNumber(const std::string& accNum, Person* persons[], int size)
+{
+	for (int i = 0; i < size; i++)
+	{
+		if (persons[i]->getAccountNumber() == accNum)
+			return false;
+	}
+	return true;
+}
+
 
 
 // Function to get input for persons
 void getInput(Person** persons, int numPersons) {
 
 	// Initialising Variables for temporary input storage
-	std::string name, socialID, occupation;
-	int age;
-	double income;
+	std::string name, socialID, accNumber;
+	double creditLimit, creditBalance;
 
 	for (int i = 0; i < numPersons; ++i) {
 		std::cout << "Enter details for person " << i + 1 << ":\n";
@@ -35,18 +44,23 @@ void getInput(Person** persons, int numPersons) {
 			}
 		} while (!checkSocialID(socialID, persons, i)); //make sure that social id is unique and not repeting
 
-		std::cout << "Age: ";
-		std::cin >> age;
+		do {
+			std::cout << "Account Number: ";
+			std::getline(std::cin, accNumber);
+			if (!checkAccountNumber(accNumber, persons, i)) {
+				std::cout << "Account Number already exists. Please enter a unique Account Number.\n";
+			}
+		} while (!checkAccountNumber(accNumber, persons, i)); //make sure that account number is unique and not repeting
+
+		std::cout << "Credit Limit: ";
+		std::cin >> creditLimit;
 		std::cin.ignore(); // Ignore remaining newline character
 
-		std::cout << "Occupation: ";
-		std::getline(std::cin, occupation);
-
-		std::cout << "Income: ";
-		std::cin >> income;
+		std::cout << "Credit Balance: ";
+		std::cin >> creditBalance;
 		std::cin.ignore(); // Ignore remaining newline character
 
-		persons[i] = new Person(name, socialID, age, occupation, income);
+		persons[i] = new Person(name, socialID, accNumber, creditLimit, creditBalance);
 	}
 }
 
@@ -59,14 +73,14 @@ bool compareBySocialID(Person* a, Person* b) {
 	return a->getSocialID() > b->getSocialID();
 }
 
-bool compareByAge(Person* a, Person* b) {
-	return a->getAge() > b->getAge();
+bool compareByAccountNumber(Person* a, Person* b) {
+	return a->getAccountNumber() > b->getAccountNumber();
 }
 
-bool compareByOccupation(Person* a, Person* b) {
-	return a->getOccupation() > b->getOccupation();
+bool compareByCreditLimit(Person* a, Person* b) {
+	return a->getCreditLimit() > b->getCreditLimit();
 }
 
-bool compareByIncome(Person* a, Person* b) {
-	return a->getIncome() > b->getIncome();
+bool compareByCreditBalance(Person* a, Person* b) {
+	return a->getCreditBalance() > b->getCreditBalance();
 }

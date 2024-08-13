@@ -1,16 +1,15 @@
 #include <iostream>
 #include "Persons.h"
 
-Person::Person(const std::string& n, const std::string& sid, int a, const std::string& occ, double inc)
-	: name(n), socialID(sid), age(a), occupation(occ), income(inc) {}
+Person::Person(const string& n, const string& sid, const string& accNum, double climit, double cBalance) : name(n), socialID(sid), accountNumber(accNum), creditLimit(climit), creditBalance(cBalance) {}
 
 Person::Person(const Person& p)
 {
 	name = p.name;
 	socialID = p.socialID;
-	age = p.age;
-	occupation = p.occupation;
-	income = p.income;
+	accountNumber = p.accountNumber;
+	creditLimit = p.creditLimit;
+	creditBalance = p.creditBalance;
 
 }
 
@@ -20,16 +19,14 @@ Person& Person::operator = (const Person& p)
 	{
 		name = p.name;
 		socialID = p.socialID;
-		age = p.age;
-		occupation = p.occupation;
-		income = p.income;
+		accountNumber = p.accountNumber;
+		creditLimit = p.creditLimit;
+		creditBalance = p.creditBalance;
 	}
 	return *this;
 }
 
-Person::~Person()
-{
-}
+
 
 
 
@@ -37,18 +34,18 @@ std::string Person::getName() const {return name;}
 
 std::string Person::getSocialID() const {return socialID;}
 
-int Person::getAge() const {return age;}
+std::string Person::getAccountNumber() const {return accountNumber;}
 
-std::string Person::getOccupation() const {return occupation;}
+double Person::getCreditLimit() const {return creditLimit;}
 
-double Person::getIncome() const {return income;}
+double Person::getCreditBalance() const {return creditBalance;}
 
 void Person::display() const
 {
 	std::cout << "Name: " << name << std::endl;
 	std::cout << "Social ID: " << socialID << std::endl;
-	std::cout << "Age: " << age << std::endl;
-	std::cout << "Occupation: " << occupation << std::endl;
-	std::cout << "Income: " << income << std::endl;
+	std::cout << "Account Number: " << accountNumber << std::endl;
+	std::cout << "Credit Limit: " << creditLimit << std::endl;
+	std::cout << "Credit Balance: " << creditBalance << std::endl;
 }
 

@@ -16,7 +16,7 @@ int main() {
 
 	int choice;
 	do {
-		std::cout << "Sort by:\n1. Name\n2. Social ID\n3. Age\n4. Occupation\n5. Income\n0. Exit\n";
+		std::cout << "Sort by:\n1. Name\n2. Social ID\n3. Account Number\n4. Credit Limit\n5. Credit Balance\n0. Exit\n";
 		std::cout << "Enter your choice: ";
 		std::cin >> choice;
 
@@ -28,13 +28,13 @@ int main() {
 			sort(persons, numPersons, compareBySocialID);
 			break;
 		case 3:
-			sort(persons, numPersons, compareByAge);
+			sort(persons, numPersons, compareByAccountNumber);
 			break;
 		case 4:
-			sort(persons, numPersons, compareByOccupation);
+			sort(persons, numPersons, compareByCreditLimit);
 			break;
 		case 5:
-			sort(persons, numPersons, compareByIncome);
+			sort(persons, numPersons, compareByCreditBalance);
 			break;
 		case 0:
 			std::cout << "Exiting the program." << std::endl;

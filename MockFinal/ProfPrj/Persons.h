@@ -1,21 +1,23 @@
-#ifndef OOP224_PERSONS_H
-#define OOP224_PERSONS_H
+#ifndef OOP244_PERSONS_H
+#define OOP244_PERSONS_H
 
 #include <iostream>
 #include <string>
 
+using namespace std;
+
 
 class Person
 {
-	std::string name{};
-	std::string socialID{};
-	int age{};
-	std::string occupation{};
-	double income{};
+	string name{};
+	string socialID{};
+	string accountNumber{};
+	double creditLimit;
+	double creditBalance;
 
 public:
 	//Constructors with arguments
-	Person(const std::string& n = "", const std::string& sid = "", int a = 0, const std::string& occ = "", double inc = 0.0);
+	Person(const string& n = "", const string& sid = "", const string& accNum= "", double climit = 0.0, double cBalance = 0.0);
 
 	//Rule of 3
 	//Copy Constructor
@@ -23,14 +25,14 @@ public:
 	// Copy Assignment
 	Person& operator = (const Person& p);
 	//Destructor
-	~Person();
+	~Person() = default;
 
 	//Query functions
-	std::string getName() const;
-	std::string getSocialID() const;
-	int getAge() const;
-	std::string getOccupation() const;
-	double getIncome() const;
+	string getName() const;
+	string getSocialID() const;
+	string getAccountNumber() const;
+	double getCreditLimit() const;
+	double getCreditBalance() const;
 
 	//Display functions
 	void display() const;
@@ -39,4 +41,4 @@ public:
 
 
 
-#endif // !OOP224_PERSONS_H
+#endif // !OOP244_PERSONS_H
